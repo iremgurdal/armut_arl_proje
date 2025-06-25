@@ -36,3 +36,37 @@ Veri seti, kullanıcıların aldıkları hizmetleri ve bu hizmetlerin kategorile
 ```python
 def arl_recommender(rules_df, product_id, rec_count=1):
     ...
+Verilen bir hizmete göre (product_id), birliktelik kurallarına göre öneriler sunar.
+
+En yüksek lift değerine göre sıralama yapılır.
+
+rec_count parametresi ile öneri sayısı ayarlanabilir.
+
+Örnek Kullanım:
+python
+Kopyala
+Düzenle
+arl_recommender(rules, "2_0", 3)
+📦 Kullanılan Kütüphaneler
+pandas
+mlxtend
+
+📁 Dosya Yapısı
+ARMUT_ARL_PROJE.py: Ana Python scripti
+
+armut_data.csv: Kullanılan veri seti (proje ile birlikte sunulmamaktadır)
+
+🧠 Öğrenilenler
+ARL yöntemlerinin gerçek hayat verisine uygulanışı
+
+Hizmet kategorileri üzerinden öneri sistemi kurulumu
+
+Verinin işlemeye uygun hale getirilmesi ve sepet tanımı
+
+Apriori algoritması ile hizmet ilişkileri çıkarımı
+
+🏁 Sonuç
+Bu proje, Armut.com platformundaki kullanıcı davranışlarını analiz ederek kişiselleştirilmiş hizmet önerileri sunabilen bir sistemin temelini oluşturur. Benzer e-ticaret ve hizmet platformları için genellenebilir yapıdadır.
+
+✨ Hazırlayan: [İrem Gürdal]
+📅 Tarih: Haziran 2025
